@@ -49,7 +49,11 @@ const showAnimation = () => {
       `;
     }, obj.addElDelay);
 
-const setTimeout = ((),obj.showMsgDelay) => {};
+    setTimeout(() => {
+      document.getElementById(obj.inputVal).textContent = obj.msg;
+    }, obj.showMsgDelay);
+
+
   });
 };
 
