@@ -29,6 +29,7 @@ const animationData = [
   }
 ];
 
+//Step 15
 const decimalToBinary = (input) => {
   if (input === 0 || input === 1) {
     return String(input);
@@ -37,6 +38,7 @@ const decimalToBinary = (input) => {
   }
 };
 
+//Step 74
 const showAnimation = () => {
   result.innerText = "Call Stack Animation";
 
@@ -63,9 +65,11 @@ const showAnimation = () => {
   }, 20000);
 };
 
+//Step 2 - check the value in the number input element whenever the user clicks the Convert button
 const checkUserInput = () => {
   const inputInt = parseInt(numberInput.value);
 
+  //if (!numberInput.value || parseInt(numberInput.value)) {  Step 11 - checks if input is not falsy or is an integer
   if (!numberInput.value || isNaN(inputInt)) {
     alert("Please provide a decimal number");
     return;
@@ -80,10 +84,11 @@ const checkUserInput = () => {
   numberInput.value = "";
 };
 
+//Step 4
 convertBtn.addEventListener("click", checkUserInput);
-
+//Step 5 -  keydown event fires every time a user presses a key on their keyboard
 numberInput.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
+  if (e.key === "Enter") {    //checks if ENTER key is pressed
     checkUserInput();
   }
 });
