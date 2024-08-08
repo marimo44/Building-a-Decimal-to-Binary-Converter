@@ -2,11 +2,11 @@ const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 const animationContainer = document.getElementById("animation-container");
-const animationData = [
+const animationData = [   //Step 83
   {
-    inputVal: 5,
-    marginTop: 300,
-    addElDelay: 1000,
+    inputVal: 5,              //inputVal will represent the value of the input each time your recursive function runs
+    marginTop: 300,           //marginTop will be the top margin for DOM elements you'll add to the page
+    addElDelay: 1000,         //addElDelay will be the delay between adding DOM elements to the page
     msg: 'decimalToBinary(5) returns "10" + 1 (5 % 2). Then it pops off the stack.',
     showMsgDelay: 15000,
     removeElDelay: 20000,
